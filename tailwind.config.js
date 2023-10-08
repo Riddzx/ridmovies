@@ -1,11 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "home.html",
-    "trendingMovie.html",
-    "./dist/home.js",
-    "./node_modules/flowbite/**/*.js",
-  ],
+  content: ["index.html", "./dist/home.js", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       animation: {

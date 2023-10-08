@@ -24,7 +24,7 @@ btnShow.addEventListener("click", function () {
   feather.replace();
 });
 // !======================================================
-const myModal = new Modal(document.getElementById("movieDetails"));
+
 document.addEventListener("click", async function (e) {
   if (e.target.classList.contains("movie-details")) {
     const tmdbID = e.target.dataset.tmdbid;
@@ -56,7 +56,7 @@ async function fetchMovieDetails(tmdbID) {
 function updateDetailsUI(data) {
   const modalBody = document.querySelector(".modal-body-details");
   let movieDetails;
-  console.log(data);
+  // console.log(data);
   if (data) {
     movieDetails = modalDetails(data);
     modalBody.innerHTML = movieDetails;
@@ -147,7 +147,7 @@ function cardMovie(movie) {
   return /*html*/ `<div class="card-style group cursor-pointer ">
                       <div class="movie-id movie-details modal-details fixed-card lg:group-hover:scale-110 duration-300 relative" data-tmdbid=${
                         movie.id
-                      } data-modal-target="movieDetails" data-modal-toggle="movieDetails" >
+                      } data-modal-target="movie-details-template" data-modal-toggle="movie-details-template" >
                         <img src="https://image.tmdb.org/t/p/w500${
                           movie.poster_path
                         }" alt="Movie Poster" class="image-card-style pointer-events-none"> 

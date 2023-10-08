@@ -428,7 +428,7 @@
       </div>
       <!-- Movie MODAL -->
       <div
-        id="movieDetails"
+        id="movie-details-template"
         tabindex="-1"
         aria-hidden="true"
         class="fixed top-0 left-0 right-0 z-[9999] hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
@@ -444,7 +444,7 @@
               <button
                 type="button"
                 class="inline-flex items-center justify-center w-8 h-8 ml-auto text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="movieDetails"
+                data-modal-hide="movie-details-template"
               >
                 <svg
                   class="w-3 h-3"
@@ -471,7 +471,7 @@
               class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
             >
               <button
-                data-modal-hide="movieDetails"
+                data-modal-hide="movie-details-template"
                 type="button"
                 class="text-white bg-primary hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm font-medium px-5 py-2.5 hover:text-slate-400 focus:z-10"
               >
@@ -484,7 +484,7 @@
       <!-- Alert Flowbite -->
       <div
         id="alertBody"
-        class="-translate-y-60 duration-300 lg:right-1/2 lg:translate-x-36 translate-x-[7.5rem] fixed top-0 z-[99999] mt-4"
+        class="-translate-y-60 duration-300 lg:right-1/2 lg:translate-x-36 translate-x-[70px] fixed top-0 z-[99999] mt-4"
       >
         <div
           id="alert-2"
@@ -705,7 +705,7 @@
     <script>
       feather.replace();
     </script>
-    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="dist/home.js"></script>
   </body>
 </html>
